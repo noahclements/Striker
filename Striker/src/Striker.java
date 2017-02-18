@@ -12,10 +12,11 @@ public class Striker {
 
 		System.out.println("Welcome to Striker... A guessing game!");
 		Thread.sleep(200);
-		System.out.println("\n" + "Player one.. Please enter a number to be guessed:");
+		System.out.println("\n" + "Player one.. Please enter a number under 1000 to be guessed:");
 		inData = stdin.readLine();
 		playerOne = Integer.parseInt(inData);
 
+		
 		Thread.sleep(200);
 		System.out.println("Player two.. Guess the number:");
 		inData = stdin.readLine();
@@ -36,5 +37,7 @@ public class Striker {
 		}
 		System.out.println("Congratulations, you guessed it correctly!");
 		System.out.println("\n" + "It took " + counter + " guesses to determine your number.");
+		Thread.sleep(200);
+		System.out.println("\n" + "Thanks for playing Striker!");
 	}
 }
